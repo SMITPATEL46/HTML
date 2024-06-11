@@ -1,20 +1,112 @@
 <!DOCTYPE html>
 <HTML>
     <head>
-        <h2 style="font-family: 'Courier New', Courier, monospace ;text-align-last: center;">I AM SMIT</h2>
+        <base href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_base">
+        <style>
+            .c1{
+                color: red;
+            }
+            #i{
+                color: red;
+                background-color: #0be219;
+            }
+            table, th, td {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        th, td {
+        padding: 5px;
+        }
+        table {
+            border-spacing: 10px;
+        }
+        tr:nth-child(odd) {
+            background-color: rgb(20, 180, 84);
+        }  
+        </style>        
     </head>
     <body>
-        <p style="color: red; background-color:yellowgreen ;",>hi, i am smit.<br> i am from manavader.</p>
+        <h2 id="#i" style="text-align-last: center;">I AM SMIT</h2>
+        <p style="color: red;",>hi, i am smit.<br> i am from manavader.</p>
+      
         <hr>
         <a href="https://www.w3schools.com/html/html_basic.asp">link</a>
         <hr>
+
+
         <img src="https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images.jpg" alt="pless try again" width="250px" height="200px">
-        <p><b>hi,</b> <i>i am</i> <strong>smit</strong>. <sub>i am</sub> <sup>from</sup>from <del>manavader</del><ins><mark>rajkot</mark></ins>.</p>
+        <div style="background-color: aquamarine;" class="c1">
+            <p><b>hi,</b> <i>i am</i> <strong>smit</strong>. <sub>i am</sub> <sup>from</sup>from <del>manavader</del><ins><mark>rajkot</mark></ins>.</p>
         <hr>
+
+
+        </div>
+        
         <p style="color: rgb(108, 6, 204);"><b>hi</b></p>
         <p style="color: hsl(0, 64%, 52%);"><b>hi</b></p>
         <p style="color: #0be219"><b>hi</b></p>
-        
+        <hr>
+
+
+        <table style="text-align:center;width: 50%;">
+            <caption style="color: blue;"><b>Employs info</b></caption>
+            <colgroup>
+                <col span="2" style="background-color: #4e12af">
+                <col span="2" style="background-color: #189292">
+              </colgroup>
+            <tr style="height: 30px;"><b>
+              <th>id</th>
+              <th>name</th>
+              <th colspan="2">mobile no.</th></b>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>smit</td>
+              <td>9874563210</td>
+              <td>9874563210</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ronak</td>
+              <td>8974563210</td>
+              <td>9874563210</td>
+            </tr>
+          </table>
+          <hr>
+
+
+          <dl>
+            <dt>Coffee</dt>
+            <ul style="list-style-type: square;">
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+              </ul>
+            <dt>Milk</dt>
+            <ol type="1">
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+              </ol>
+          </dl>
+          <hr>
+
+
+          <form>
+            <label for="cars">Choose a sport:</label>
+            <select name="cars" id="cars">
+              <option value="volvo">cricket</option>
+              <option value="saab">football</option>
+              <option value="opel">handball</option>
+              <option value="audi">hoki</option>
+            </select>
+            <br><br>
+            <button type="button" onclick="alert('done')">done</button>
+          </form>
+          <hr>
+
+
+          <iframe src="icon.jpeg" height="200" width="200" title="Iframe Example"></iframe>
 
     </body>
 </HTML>
