@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form{
+                text-align:center;
+                color: rgb(35, 193, 143);
+                font-size: large;
+                margin-top: 10%;
+            }
+            .button{
+                background-image: url(bg1.jpg);
+                color: rgb(171, 155, 155);
+                font-size: large;
+                margin-left: 51.5%;
+            }
+            .fieldset{
+            
+               margin: 5%;;
+               background-image: url(bg2.webp);
+               
+            }
+        </style>
+
+    </head>
+    <body style="background-image: url(bg1.jpg);">
+        <form>
+            <fieldset class="fieldset">
+                <legend style="color: red;">Form</legend>
+                <div style="text-align: center;">
+            <label for="fname">first name :</label>
+            <input type="text" id="fname" required autofocus>
+            <br>
+            <br>
+            <label for="lname">last name :</label>
+            <input type="text" id="lname" required>
+            <br>
+            <br>
+        </div>
+            <div style="text-align: left;margin-left: 41.5%;">
+            <h3 style="color: black;">Chose one language</h3>
+            <input type="radio" id="html" name="fl" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fl" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fl" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            </div>
+            <div style="text-align: left;margin-left: 41.5%;">
+                <h3 style="color: black;">Chose yout vihicale</h3>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+            </div>
+            <br><br>
+            <div>
+                <input list="Animal" name="Animal" required>
+                <datalist id="Animal">
+                  <option value="Horce">
+                  <option value="Cat">
+                  <option value="Dog">
+                  <option value="Elephant">
+                  <option value="Snake">
+                </datalist>
+                <input type="submit">
+            </div> 
+            <br><br>
+            <div style="text-align: left;margin-left: 5%;">
+            <input type="submit" value="submit" onclick="alert('submison done')" class="button">
+            </div>  
+            
+        </fieldset>        
+        </form>
+    </body>
+</html>
